@@ -58,5 +58,14 @@ function run() {
   devImg.classList.add('roll-out-left')
   var textLog = document.getElementById('text-log')
   console.log(textLog)
-  textLog.textContent = "You runaway from a Interview!"
+  textLog.textContent = 'You runaway from a Interview!'
+}
+
+function changeStack() {
+  var devImg = document.getElementById('devImg')
+  devImg.src = ''
+}
+
+function start(){
+  
 }
