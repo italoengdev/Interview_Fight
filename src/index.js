@@ -1,8 +1,8 @@
-// window.onload= functionName();
 
-function effects() {
-  var imgBoss = document.getElementById()
-}
+
+// window.onload = resolved();
+
+
 
 // function FindIt(image, id){
 //   var t = setTimeout('sound()',10);
@@ -61,11 +61,21 @@ function run() {
   textLog.textContent = 'You runaway from a Interview!'
 }
 
-function changeStack() {
+function changeStackFront() {
   var devImg = document.getElementById('devImg')
-  devImg.src = ''
+  devImg.src = '/src/img/front-end.jpg'
 }
 
-function start(){
-  
+function start() {
+  var randomN = Math.floor(Math.random() * 10) + 1
+  console.log(randomN)
+  if (randomN <= 3) {
+  }
 }
+start()
+
+
+
+
+
+
