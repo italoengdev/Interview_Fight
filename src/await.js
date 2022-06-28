@@ -3,10 +3,9 @@
 const promise1 = new Promise((resolve, reject) => {
 	setTimeout(() => {
 		resolve(
-      document.getElementById('enemyImg').src = '/src/img/businessman-profession-cartoon-by-Vexels.png',
       document.getElementById('enemyImg').classList.add('slide-in-left')
     );
-	}, 1000);
+	}, 0);
 });
 
 const promise2 = new Promise((resolve, reject) => {
