@@ -11,7 +11,7 @@ const promise1 = new Promise((resolve, reject) => {
 const promise2 = new Promise((resolve, reject) => {
 	setTimeout(() => {
 		resolve(
-      document.getElementById('text-log').textContent="CTO choose a random Tech Recuiter"
+      document.getElementById('text-log').textContent="CTO choose a random Tech Recruiter"
     );
 	}, 4000);
 });
@@ -43,6 +43,22 @@ const promise5 = new Promise((resolve, reject) => {
 	}, 6000);
 });
 
+const promise6 = new Promise((resolve, reject) => {
+	setTimeout(() => {
+		resolve(
+      document.getElementById('text-log').textContent="Study to earn abilities"
+    );
+	}, 7000);
+});
+
+const promise7 = new Promise((resolve, reject) => {
+	setTimeout(() => {
+		resolve(
+      document.getElementById('text-log').textContent="then choose the corresponding stack!"
+    );
+	}, 12000);
+});
+
 async function logPromise1() {
 	const result1 = await promise1;
 	return result1
@@ -67,8 +83,20 @@ async function logPromise5() {
 	const result5 = await promise5;
 	console.log(result5);
 }
+
+async function logPromise6() {
+	const result6 = await promise6;
+	console.log(result6);
+}
+
+async function logPromise7() {
+	const result7 = await promise7;
+	console.log(result7);
+}
 logPromise1();
 logPromise2();
 logPromise3();
 logPromise4();
 logPromise5();
+logPromise6();
+logPromise7();

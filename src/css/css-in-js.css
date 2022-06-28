@@ -1,0 +1,27 @@
+:root {
+  --html-bg-image: url("/src/img/background/html-5.png");
+  --css-bg-image: url("/src/img/background/css-5.png");
+  --js-bg-image: url("/src/img/background/js-vanilla.png");
+}
+
+#orbit {
+  /* background-image:  var(--html-bg-image); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  animation: battle 6s linear infinite;
+  position: absolute;
+  margin: 100px;
+}
+
+@keyframes battle {
+	from {
+		transform: rotate(0deg) translateX(100px) rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg) translateX(100px) rotate(-360deg);
+	}
+}

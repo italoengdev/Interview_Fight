@@ -1,4 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+@-webkit-keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
 
 @-webkit-keyframes scale-in-center {
   0% {
@@ -95,42 +127,6 @@
   }
 }
 
-html{
-  height:100vh
-}
-
-.font-log{
-  font-family: 'Roboto Mono', monospace;
-}
-
-.bg-photo{
-  background: url(/src/img/bg.jpg) no-repeat center center fixed;
-  background-size: cover;
-  height: 100%;
-  overflow: hidden;
-}
-
-#ground{
-  filter: grayscale(100%);
-  z-index: -1;
-}
-
-.move-img{
-  position: relative;
-  top: 38.406px;
-}
-
-.move-row{
-  position: relative;
-  top: -38px;
-}
-.bg-yellow{
-  background-color: rgba(255, 255, 0, 0.589);
-}
-.bg-marron{
-  background-color: #9F8E86;
-}
-
 .slide-right {
 	-webkit-animation: slide-right 0.5s steps(2, end) both;
 	        animation: slide-right 0.5s steps(2, end) both;
@@ -154,4 +150,9 @@ html{
 .scale-in-center {
 	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.puff-in-center {
+	-webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }

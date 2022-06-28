@@ -1,8 +1,4 @@
-
-
-// window.onload = resolved();
-
-
+// window.onload = resolved()
 
 // function FindIt(image, id){
 //   var t = setTimeout('sound()',10);
@@ -44,10 +40,11 @@ function move() {
   var element = document.getElementById('myBar')
   element.classList.remove('w-100')
   var a = '100%'
-  myBar.style.width = '60%'
+  myBar.style.width = '40%'
   if (myBar.style.width <= '50%') {
     element.classList.add('bg-warning')
   }
+  document.getElementById('text-log').textContent = 'It was super effective!'
 }
 
 function run() {
@@ -63,7 +60,9 @@ function run() {
 
 function changeStackFront() {
   var devImg = document.getElementById('devImg')
+  devImg.classList.add('puff-in-center')
   devImg.src = '/src/img/front-end.jpg'
+  document.querySelectorAll('div.remove').outerHTML = ''
 }
 
 function start() {
@@ -73,9 +72,3 @@ function start() {
   }
 }
 start()
-
-
-
-
-
-
