@@ -180,5 +180,8 @@ function fight() {
     logPromise2()
     logPromise3()
     logPromise4()
+  } else {
+    document.getElementById('text-log').textContent =
+      'You need to choose a stack before Attack!'
   }
 }
