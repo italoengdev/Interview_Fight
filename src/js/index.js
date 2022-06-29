@@ -1,7 +1,5 @@
 // window.onload = resolved()
 
-
-
 function run() {
   var devImg = document.getElementById('devImg')
   console.log(devImg)
@@ -55,7 +53,7 @@ function changeStackFull() {
   const existingElements = document.querySelectorAll('#orbit')
   if (existingElements.length > 4) {
     var devImg = document.getElementById('devImg')
-    devImg.classList.add('puff-in-center')
+    devImg.classList.add('puff-in-left')
     devImg.src = '/src/img/full-stack (2).jpg'
     console.log(document.getElementsByClassName('remove'))
     // The length of your HTMLCollection changes when you remove an item. A way to do it is to use a while loop

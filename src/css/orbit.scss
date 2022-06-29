@@ -142,34 +142,4 @@ animations
   }
 }
 
-/* 
-icons 
-*/
-$icons : (
-  ('heart-o', #b71c1c, white),
-  ('coffee', #4CAF50, #CDDC39),
-  ('safari', white, darkslateblue),
-  ('firefox', #1565c0, #ff8f00),
-  ('chrome', #fbc02d, #ef6c00),
-  ('edge', #03a9f4, white),
-  ('android', snow, limegreen),
-  ('apple', #444, white),
-  ('linux', white, #222),
-  ('windows', white, #03a9f4),
-  ('terminal', #222, #fff),
-  ('html5', white, #e65100),
-  ('css3', white, #2196f3),
-  ('git', #222, white),
-  ('free-code-camp', green, white),
-  ('meetup', red, white),
-  ('podcast', red, white),
-  ('codepen', #333, white)
-);
-
-@each $icon in $icons {
-  .fa-#{nth($icon, 1)} {
-    background: nth($icon, 2);
-    color: nth($icon, 3);
-  }
-}
 
