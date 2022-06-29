@@ -11,7 +11,7 @@ const promise1 = new Promise((resolve, reject) => {
 const promise2 = new Promise((resolve, reject) => {
 	setTimeout(() => {
 		resolve(
-      document.getElementById('text-log').textContent="CTO choose a random Tech Recruiter"
+      document.getElementById('text-log').textContent="CTO choose a FullStack Tech Recruiter"
     );
 	}, 4000);
 });
@@ -38,7 +38,7 @@ const promise4 = new Promise((resolve, reject) => {
 const promise5 = new Promise((resolve, reject) => {
 	setTimeout(() => {
 		resolve(
-      document.getElementById('text-log').textContent="Find out which Stack he wants..."
+      document.getElementById('text-log').textContent="Find out what he wants..."
     );
 	}, 6000);
 });

@@ -105,7 +105,7 @@
         class="border border-dark bg-light rounded col-10 mb-4 col-sm-4 h-50 align-self-end"
       >
         <div class="row d-flex justify-content-between mt-2">
-          <h3 class="col-5 col-sm-8 d-flex flex-grow-1">
+          <h3 id="textDev" class="col-5 col-sm-8 d-flex flex-grow-1">
             DEV INTERN
             <i class="bi bi-gender-female d-flex align-items-center"></i>
           </h3>
@@ -145,7 +145,7 @@
       <div class="col-12 col-md-6 border rounded bg-success d-flex">
         <div class="btn-group-vertical w-50 my-1">
           <button
-            onclick="move()"
+            onclick="fight()"
             type="button"
             class="btn btn-danger text-white rounded-pill font-log fw-bold"
           >
@@ -201,7 +201,14 @@
         ></button>
       </div>
       <div class="offcanvas-body small d-flex flex-column">
-        <button onclick="changeStackFront()" class="w-50" id="teste">
+        <button
+          type="button"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+          onclick="changeStackFront()"
+          class="w-50"
+          id="teste"
+        >
           <img
             src="/src/img/front-end.jpg"
             alt="Designed by slidesgo / Freepik"
@@ -210,7 +217,13 @@
           />
           <h5>Front-End</h5>
         </button>
-        <button onclick="" class="w-50">
+        <button
+          type="button"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+          onclick="changeStackBack()"
+          class="w-50"
+        >
           <img
             src="/src/img/backend.jpg"
             alt="Designed by slidesgo / Freepik"
@@ -219,7 +232,13 @@
           />
           <h5>Back-End</h5>
         </button>
-        <button class="w-50">
+        <button
+          type="button"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+          onclick="changeStackFull()"
+          class="w-50"
+        >
           <img
             src="/src/img/full-stack (2).jpg"
             alt="Designed by slidesgo / Freepik"
@@ -250,7 +269,7 @@
           aria-label="Close"
         ></button>
       </div>
-      <div class="offcanvas-body small d-flex flex-column">
+      <div class="offcanvas-body small d-flex flex-column flex-wrap">
         <button
           type="button"
           data-bs-dismiss="offcanvas"
@@ -262,8 +281,8 @@
           <img
             src="/src/img/background/html-5.png"
             alt="Designed by slidesgo / Freepik"
-            width="150"
-            height="150"
+            width="125"
+            height="125"
           />
           <h5>HTML-5</h5>
         </button>
@@ -277,8 +296,8 @@
           <img
             src="/src/img/background/css-5.png"
             alt="Designed by slidesgo / Freepik"
-            width="150"
-            height="150"
+            width="125"
+            height="125"
           />
           <h5>CSS-3</h5>
         </button>
@@ -292,10 +311,102 @@
           <img
             src="/src/img/background/js-vanilla.png"
             alt="Designed by slidesgo / Freepik"
-            width="150"
-            height="150"
+            width="125"
+            height="125"
           />
           <h5>JavaScript</h5>
+        </button>
+        <button
+          type="button"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+          onclick="node()"
+          class="w-50"
+          id="teste"
+        >
+          <img
+            src="/src/img/background/node.png"
+            alt="Designed by slidesgo / Freepik"
+            width="125"
+            height="125"
+          />
+          <h5>Node</h5>
+        </button>
+        <button
+          type="button"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+          onclick="ruby()"
+          class="w-50"
+        >
+          <img
+            src="/src/img/background/ruby.png"
+            alt="Designed by slidesgo / Freepik"
+            width="125"
+            height="125"
+          />
+          <h5>Ruby</h5>
+        </button>
+        <button
+          type="button"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+          onclick="sql()"
+          class="w-50"
+        >
+          <img
+            src="/src/img/background/sql.png"
+            alt="Designed by slidesgo / Freepik"
+            width="125"
+            height="125"
+          />
+          <h5>Sql</h5>
+        </button>
+        <button
+          type="button"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+          onclick="rails()"
+          class="w-50"
+          id="teste"
+        >
+          <img
+            src="/src/img/background/rails.png"
+            alt="Designed by slidesgo / Freepik"
+            width="125"
+            height="125"
+          />
+          <h5>Rails</h5>
+        </button>
+        <button
+          type="button"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+          onclick="react()"
+          class="w-50"
+        >
+          <img
+            src="/src/img/background/React-icon.svg.png"
+            alt="Designed by slidesgo / Freepik"
+            width="125"
+            height="125"
+          />
+          <h5>React</h5>
+        </button>
+        <button
+          type="button"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+          onclick="nextjs()"
+          class="w-50"
+        >
+          <img
+            src="/src/img/background/nextjs.png"
+            alt="Designed by slidesgo / Freepik"
+            width="125"
+            height="125"
+          />
+          <h5>nextjs</h5>
         </button>
       </div>
     </div>
@@ -312,6 +423,7 @@
     <script src="/src/js/index.js"></script>
     <script src="/src/js/await.js"></script>
     <script src="/src/js/addStudy.js"></script>
+    <script src="/src/js/fightButton.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

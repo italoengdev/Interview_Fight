@@ -1,51 +1,11 @@
 // window.onload = resolved()
 
-// function FindIt(image, id){
-//   var t = setTimeout('sound()',10);
-//   var b = setTimeout('bigger(' + image + ')',30);
-//   var h = setTimeout('hide(' + image + ')',1500);
-//   }
-
-//   function FindIt(image, id){
-//     sound();
-//     bigger(image);
-//     hide(image);
-//     }
-
-//     function sound(){
-//     document.getElementById("sound_element").innerHTML= "<embed src='chime.wav' hidden=true    autostart=true loop=false>";
-//     }
-
-//     function bigger(image){
-//     var img = document.getElementById(image);
-//     img.style.width = 112;
-//     img.style.height = 112;
-//     }
-
-//     function hide(id){
-//     var ms = 2000;
-//     ms += new Date().getTime();
-//     while (new Date() < ms){} //Create a 2 second delay
-//     var img = document.getElementById(id);
-//     img.style.visibility='hidden';
-//     }
-
 function clickStudy() {
   var textLog = document.getElementById('text-log')
   console.log(textLog)
   textLog.textContent = "You missed the turn, You don't have time to study!"
 }
 
-function move() {
-  var element = document.getElementById('myBar')
-  element.classList.remove('w-100')
-  var a = '100%'
-  myBar.style.width = '40%'
-  if (myBar.style.width <= '50%') {
-    element.classList.add('bg-warning')
-  }
-  document.getElementById('text-log').textContent = 'It was super effective!'
-}
 
 function run() {
   var devImg = document.getElementById('devImg')
@@ -59,16 +19,66 @@ function run() {
 }
 
 function changeStackFront() {
-  var devImg = document.getElementById('devImg')
-  devImg.classList.add('puff-in-center')
-  devImg.src = '/src/img/front-end.jpg'
-  document.querySelectorAll('div.remove').outerHTML = ''
-}
-
-function start() {
-  var randomN = Math.floor(Math.random() * 10) + 1
-  console.log(randomN)
-  if (randomN <= 3) {
+  const existingElements = document.querySelectorAll('#orbit')
+  if (existingElements.length > 2) {
+    var devImg = document.getElementById('devImg')
+    devImg.classList.add('puff-in-center')
+    devImg.src = '/src/img/front-end.jpg'
+    console.log(document.getElementsByClassName('remove'))
+    // The length of your HTMLCollection changes when you remove an item. A way to do it is to use a while loop
+    while (document.getElementsByClassName('remove').length > 0) {
+      document.getElementsByClassName('remove')[0].remove()
+    }
+    document.getElementById('text-log').textContent =
+      'You became a Front-End Developer! Try Attack!'
+  } else {
+    document.getElementById('text-log').textContent =
+      'Study more to become a Dev!'
   }
 }
-start()
+
+function changeStackBack() {
+  const existingElements = document.querySelectorAll('#orbit')
+  if (existingElements.length > 2) {
+    var devImg = document.getElementById('devImg')
+    devImg.classList.add('puff-in-center')
+    devImg.src = '/src/img/backend.jpg'
+    console.log(document.getElementsByClassName('remove'))
+    // The length of your HTMLCollection changes when you remove an item. A way to do it is to use a while loop
+    while (document.getElementsByClassName('remove').length > 0) {
+      document.getElementsByClassName('remove')[0].remove()
+    }
+    document.getElementById('text-log').textContent =
+      'You became a Backend Developer'
+  } else {
+    document.getElementById('text-log').textContent =
+      'Study more to become a Dev!'
+  }
+}
+
+function changeStackFull() {
+  const existingElements = document.querySelectorAll('#orbit')
+  if (existingElements.length > 4) {
+    var devImg = document.getElementById('devImg')
+    devImg.classList.add('puff-in-center')
+    devImg.src = '/src/img/full-stack (2).jpg'
+    console.log(document.getElementsByClassName('remove'))
+    // The length of your HTMLCollection changes when you remove an item. A way to do it is to use a while loop
+    while (document.getElementsByClassName('remove').length > 0) {
+      document.getElementsByClassName('remove')[0].remove()
+    }
+    document.getElementById('text-log').textContent =
+      'You became a FullStack Developer'
+  } else {
+    document.getElementById('text-log').textContent =
+      'Study more to become a FullStack Dev!'
+  }
+}
+
+// function start() {
+//   var randomN = Math.floor(Math.random() * 10) + 1
+//   console.log(randomN)
+//   if (randomN <= 3) {
+//   }
+// }
+// start()

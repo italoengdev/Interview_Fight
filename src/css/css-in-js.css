@@ -2,6 +2,12 @@
   --html-bg-image: url("/src/img/background/html-5.png");
   --css-bg-image: url("/src/img/background/css-5.png");
   --js-bg-image: url("/src/img/background/js-vanilla.png");
+  --node-bg-image: url("/src/img/background/node.png");
+  --ruby-bg-image: url("/src/img/background/ruby.png");
+  --sql-bg-image: url("/src/img/background/sql.png");
+  --rails-bg-image: url("/src/img/background/rails.png");
+  --react-bg-image: url("/src/img/background/React-icon.svg.png");
+  --nextjs-bg-image: url("/src/img/background/nextjs.png");
 }
 
 #orbit {
@@ -10,11 +16,16 @@
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  border-radius: 15px;
   width: 40px;
   height: 40px;
   animation: battle 6s linear infinite;
   position: absolute;
   margin: 100px;
+}
+
+.remove{
+  display:none;
 }
 
 @keyframes battle {
