@@ -1,10 +1,5 @@
 // window.onload = resolved()
 
-function clickStudy() {
-  var textLog = document.getElementById('text-log')
-  console.log(textLog)
-  textLog.textContent = "You missed the turn, You don't have time to study!"
-}
 
 
 function run() {
@@ -68,7 +63,7 @@ function changeStackFull() {
       document.getElementsByClassName('remove')[0].remove()
     }
     document.getElementById('text-log').textContent =
-      'You became a FullStack Developer'
+      'You became a FullStack Developer! Finish him!'
   } else {
     document.getElementById('text-log').textContent =
       'Study more to become a FullStack Dev!'

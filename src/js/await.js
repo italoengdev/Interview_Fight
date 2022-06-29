@@ -40,15 +40,15 @@ const promise5 = new Promise((resolve, reject) => {
 		resolve(
       document.getElementById('text-log').textContent="Find out what he wants..."
     );
-	}, 6000);
+	}, 7000);
 });
 
 const promise6 = new Promise((resolve, reject) => {
 	setTimeout(() => {
 		resolve(
-      document.getElementById('text-log').textContent="Study to earn abilities"
+      document.getElementById('text-log').textContent="Study to learn abilities"
     );
-	}, 7000);
+	}, 10000);
 });
 
 const promise7 = new Promise((resolve, reject) => {
@@ -56,7 +56,7 @@ const promise7 = new Promise((resolve, reject) => {
 		resolve(
       document.getElementById('text-log').textContent="then choose the corresponding stack!"
     );
-	}, 12000);
+	}, 14000);
 });
 
 async function logPromise1() {
